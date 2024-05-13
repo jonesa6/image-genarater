@@ -18,10 +18,10 @@ function random_shape() {
         while (x <= y) {
             circle.setPixel(cx + x, cy + y, randint(2, 4))
             circle.setPixel(cx + x, cx - y, 4)
-            circle.setPixel(cx - x, cx + y, 9)
-            circle.setPixel(cx - x, cy - y, 9)
+            circle.setPixel(cx - x, cx + y, randint(4, 6))
+            circle.setPixel(cx - x, cy - y, randint(2, 4))
             circle.setPixel(cx + y, cy + x, randint(4, 6))
-            circle.setPixel(cx + y, cy - x, 4)
+            circle.setPixel(cx + y, cy - x, randint(1, 2))
             circle.setPixel(cx - y, cy + x, 1)
             circle.setPixel(cx - y, cy - x, randint(1, 3))
             if (d <= 0) {

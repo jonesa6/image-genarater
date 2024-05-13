@@ -19,10 +19,10 @@ def random_shape():
         while x <= y:
             circle.set_pixel(cx + x, cy + y, randint(2, 4))
             circle.set_pixel(cx + x, cx - y, 4)
-            circle.set_pixel(cx - x, cx + y, 9)
-            circle.set_pixel(cx - x, cy - y, 9)
+            circle.set_pixel(cx - x, cx + y, randint(4, 6))
+            circle.set_pixel(cx - x, cy - y, randint(2, 4))
             circle.set_pixel(cx + y, cy + x, randint(4, 6))
-            circle.set_pixel(cx + y, cy - x, 4)
+            circle.set_pixel(cx + y, cy - x, randint(1, 2))
             circle.set_pixel(cx - y, cy + x, 1)
             circle.set_pixel(cx - y, cy - x, randint(1, 3))
             if d <= 0:
